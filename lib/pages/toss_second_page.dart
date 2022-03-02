@@ -3,16 +3,16 @@ import 'package:toss_ui_clone/config/colors.dart';
 import 'package:toss_ui_clone/widgets/toss_get_point_card_widget.dart';
 
 final List<TossGetPointCard> getPointCardList = [
-  TossGetPointCard(assetUrl: 'assets/image 39.png', title: '만보기', subtitle: '140원 받기'),
-  TossGetPointCard(assetUrl: 'assets/image 40.png', title: '좋아하는 브랜드에서', subtitle: '브랜드 캐시백 받기'),
-  TossGetPointCard(assetUrl: 'assets/image 41.png', title: '행운퀴즈 풀고', subtitle: '랜덤 금액 받기'),
-  TossGetPointCard(assetUrl: 'assets/image 42.png', title: '이번 주 미션하면', subtitle: '얼마 받을지 보기'),
-  TossGetPointCard(assetUrl: 'assets/image 43.png', title: '머니 알림 받고', subtitle: '20원 받기'),
-  TossGetPointCard(assetUrl: 'assets/image 39.png', title: '카드 등록하고', subtitle: '500원 받기'),
-  TossGetPointCard(assetUrl: 'assets/image 40.png', title: '토스프라임 가입하고', subtitle: '최대 1억 받기'),
-  TossGetPointCard(assetUrl: 'assets/image 41.png', title: '버튼 누르고', subtitle: '10원 주기'),
-  TossGetPointCard(assetUrl: 'assets/image 42.png', title: '택시 타고', subtitle: '집에 가기'),
-  TossGetPointCard(assetUrl: 'assets/image 43.png', title: '카드 쓰고', subtitle: '50000원 받기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_1.png', title: '만보기', subtitle: '140원 받기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_2.png', title: '좋아하는 브랜드에서', subtitle: '브랜드 캐시백 받기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_3.png', title: '행운퀴즈 풀고', subtitle: '랜덤 금액 받기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_4.png', title: '이번 주 미션하면', subtitle: '얼마 받을지 보기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_5.png', title: '머니 알림 받고', subtitle: '20원 받기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_1.png', title: '카드 등록하고', subtitle: '500원 받기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_2.png', title: '토스프라임 가입하고', subtitle: '최대 1억 받기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_3.png', title: '버튼 누르고', subtitle: '10원 주기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_4.png', title: '택시 타고', subtitle: '집에 가기'),
+  TossGetPointCard(assetUrl: 'assets/first_page_icon_5.png', title: '카드 쓰고', subtitle: '50000원 받기'),
 ];
 
 class TossSecondPage extends StatelessWidget {
@@ -58,7 +58,7 @@ class TossSecondPage extends StatelessWidget {
                       leading: Container(
                         width: 40,
                         alignment: Alignment.center,
-                        child: Image.asset('assets/image 39.png'),
+                        child: Image.asset('assets/third_page_icon_5.png'),
                       ),
                       title: Text(
                         "내 포인트",
@@ -93,7 +93,7 @@ class TossSecondPage extends StatelessWidget {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.asset('assets/image 44.png'),
+                          Image.asset('assets/second_page_icon_1.png'),
                           Text(
                             "이번 주 브랜드 도착",
                             style: TextStyle(

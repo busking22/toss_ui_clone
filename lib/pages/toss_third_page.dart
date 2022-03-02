@@ -3,22 +3,22 @@ import 'package:toss_ui_clone/config/colors.dart';
 import 'package:toss_ui_clone/widgets/toss_bank_card_widget.dart';
 
 final List<TossBankCard> tossBankCardList = [
-  TossBankCard(assetUrl: 'assets/image 45.png', title: 'NH농협'),
-  TossBankCard(assetUrl: 'assets/image 46.png', title: 'KB국민'),
-  TossBankCard(assetUrl: 'assets/image 47.png', title: '카카오뱅크'),
-  TossBankCard(assetUrl: 'assets/image 48.png', title: '신한'),
-  TossBankCard(assetUrl: 'assets/image 49.png', title: '우리'),
-  TossBankCard(assetUrl: 'assets/image 50.png', title: 'IBK기업'),
-  TossBankCard(assetUrl: 'assets/image 51.png', title: '하나'),
-  TossBankCard(assetUrl: 'assets/image 52.png', title: '새마을'),
-  TossBankCard(assetUrl: 'assets/image 45.png', title: '대구'),
-  TossBankCard(assetUrl: 'assets/image 46.png', title: '부산'),
-  TossBankCard(assetUrl: 'assets/image 47.png', title: '우체국'),
-  TossBankCard(assetUrl: 'assets/image 48.png', title: '신협'),
-  TossBankCard(assetUrl: 'assets/image 49.png', title: '수협'),
-  TossBankCard(assetUrl: 'assets/image 50.png', title: '광주'),
-  TossBankCard(assetUrl: 'assets/image 51.png', title: '전북'),
-  TossBankCard(assetUrl: 'assets/image 52.png', title: '중국공상'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_1.png', title: 'NH농협'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_2.png', title: 'KB국민'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_3.png', title: '카카오뱅크'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_4.png', title: '신한'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_5.png', title: '우리'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_1.png', title: 'IBK기업'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_2.png', title: '하나'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_3.png', title: '새마을'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_4.png', title: '대구'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_5.png', title: '부산'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_1.png', title: '우체국'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_2.png', title: '신협'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_3.png', title: '수협'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_4.png', title: '광주'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_5.png', title: '전북'),
+  TossBankCard(assetUrl: 'assets/third_page_icon_1.png', title: '중국공상'),
 ];
 
 class TossThirdPage extends StatelessWidget {
@@ -38,21 +38,19 @@ class TossThirdPage extends StatelessWidget {
                   SizedBox(
                     height: 172,
                   ),
-                  Expanded(
-                    child: GridView.builder(
-                      shrinkWrap: true,
-                      physics: ScrollPhysics(),
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
-                        childAspectRatio: 3 / 2,
-                      ),
-                      itemCount: tossBankCardList.length * 2,
-                      itemBuilder: (context, index) {
-                        return TossBankCardWidget(
-                          tossBankCard: tossBankCardList[index % tossBankCardList.length],
-                        );
-                      },
+                  GridView.builder(
+                    shrinkWrap: true,
+                    physics: ScrollPhysics(),
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3,
+                      childAspectRatio: 3 / 2,
                     ),
+                    itemCount: tossBankCardList.length * 2,
+                    itemBuilder: (context, index) {
+                      return TossBankCardWidget(
+                        tossBankCard: tossBankCardList[index % tossBankCardList.length],
+                      );
+                    },
                   ),
                   Container(
                     margin: EdgeInsets.symmetric(vertical: 16),
@@ -65,21 +63,19 @@ class TossThirdPage extends StatelessWidget {
                       ),
                     ),
                   ),
-                  Expanded(
-                    child: GridView.builder(
-                      shrinkWrap: true,
-                      physics: ScrollPhysics(),
-                      gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                        crossAxisCount: 3,
-                        childAspectRatio: 3 / 2,
-                      ),
-                      itemCount: tossBankCardList.length * 2,
-                      itemBuilder: (context, index) {
-                        return TossBankCardWidget(
-                          tossBankCard: tossBankCardList[index % tossBankCardList.length],
-                        );
-                      },
+                  GridView.builder(
+                    shrinkWrap: true,
+                    physics: ScrollPhysics(),
+                    gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3,
+                      childAspectRatio: 3 / 2,
                     ),
+                    itemCount: tossBankCardList.length * 2,
+                    itemBuilder: (context, index) {
+                      return TossBankCardWidget(
+                        tossBankCard: tossBankCardList[index % tossBankCardList.length],
+                      );
+                    },
                   ),
                   SizedBox(
                     height: 32,
